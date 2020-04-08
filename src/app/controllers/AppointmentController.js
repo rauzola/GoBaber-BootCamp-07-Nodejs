@@ -6,6 +6,8 @@ import File from "../models/File";
 import Appointment from "../models/Appointment";
 import Notification from "../shemas/Notification";
 
+import Mail from "../../lib/Mail";
+
 class AppointmentController {
   async index(req, res) {
     const { page = 1 } = req.query;
